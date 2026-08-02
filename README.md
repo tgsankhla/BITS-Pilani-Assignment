@@ -48,29 +48,12 @@ Streamlit app
 Notebook
 - `ML_Assignment_2.ipynb` contains experiments and code used to train and evaluate models offline.
 
----
 
+## Screenshots from BITS Virtual lab
 
-## Deployment
-This app has been deploed to below streamlit url. Please have a check
+![Virtual Screen 1](screenshots/Lab1.png)
 
-https://your-streamlit-app-link-here
-
----
-
-## Screenshots
-
-Add your screenshots to the repository and reference them here. For example:
-
-```markdown
-![App Home Screen](screenshots/app_home.png)
-
-![Model Metrics Screen](screenshots/model_metrics.png)
-```
-
-- Create a `screenshots/` folder in the repo.  
-- Save your two Bits Virtual Lab screenshots as `app_home.png` and `model_metrics.png` (or update the filenames below).  
-- Use relative paths so the images render on GitHub and in markdown viewers.
+![Virtual Screen 2](screenshots/Lab2.png)
 
 ---
 
@@ -130,3 +113,33 @@ ML_Assignment_2/
   - seaborn
 
 ---
+
+## App Preview
+Below are screenshots of the Streamlit app running locally (`localhost:8501`):
+
+### Dataset Upload and Model Selection
+![App Screenshot 1](<screenshots\App_Local1.png>)
+
+### Evaluation Metrics and Confusion Matrix
+![App Screenshot 2](<screenshots\App_Local2.png>)
+
+### Classification Report
+![App Screenshot 3](<screenshots\App_Local3.png>)
+
+These screenshots demonstrate successful dataset upload, model selection (kNN), evaluation metrics display, confusion matrix visualization, and classification report generation.
+
+---
+
+## Conclusion
+This project successfully implements multiple machine learning classification models and provides an interactive Streamlit interface for evaluation.  
+- The app supports both `.csv` datasets.  
+- Evaluation metrics and visualizations are automatically generated for each model.  
+- **Logistic Regression** achieved the best overall performance, followed closely by **Naive Bayes** and **Random Forest**.  
+
+The repository is complete, reproducible, and ready for evaluation.  
+It includes the notebook, Streamlit app, requirements, and a sample dataset (`test_data.csv`) that meets the assignment specifications.
+
+---
+
+## Streamlit App (Live)
+👉 [Live Streamlit App](https://your-streamlit-app-link-here)
