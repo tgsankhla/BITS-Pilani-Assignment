@@ -142,4 +142,4 @@ It includes the notebook, Streamlit app, requirements, and a sample dataset (`te
 ---
 
 ## Streamlit App (Live)
-👉 [Live Streamlit App](https://your-streamlit-app-link-here)
+👉 [Live Streamlit App](https://tusharsankhla-ml-assignment2.streamlit.app/)
