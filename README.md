@@ -98,6 +98,12 @@ ML_Assignment_2/
 
 ---
 
+## Conclusion
+
+The assignment successfully demonstrates multiple ML classification models with evaluation metrics and deployment. Random Forest emerged as the overall winner on the chosen dataset. The repository includes all required files (app.py, requirements.txt, README.md, test_data.csv) and the Streamlit app is deployed and accessible online.
+
+---
+
 ## Screenshots from BITS Virtual lab
 
 ![Virtual Screen 1](screenshots/Lab1.png)
@@ -108,23 +114,10 @@ ML_Assignment_2/
 
 ## App Preview
 
-Below are screenshots of the Streamlit app running locally (`localhost:8501`):
-
-### Dataset Upload and Model Selection
 ![App Screenshot 1](<screenshots\App_Local1.png>)
 
-### Evaluation Metrics and Confusion Matrix
 ![App Screenshot 2](<screenshots\App_Local2.png>)
 
-### Classification Report
 ![App Screenshot 3](<screenshots\App_Local3.png>)
-
-These screenshots demonstrate successful dataset upload, model selection (kNN), evaluation metrics display, confusion matrix visualization, and classification report generation.
-
----
-
-## Conclusion
-
-The assignment successfully demonstrates multiple ML classification models with evaluation metrics and deployment. Random Forest emerged as the overall winner on the chosen dataset. The repository includes all required files (app.py, requirements.txt, README.md, test_data.csv) and the Streamlit app is deployed and accessible online.
 
 ---
