@@ -25,7 +25,10 @@ uploaded_file = st.file_uploader("Upload your CSV dataset", type="csv")
 
 if uploaded_file:
     data = pd.read_csv(uploaded_file)
-    st.write("Dataset Preview:", data.head())
+
+    # Show full dataset
+    st.write("Dataset Preview (all rows):")
+    st.dataframe(data)
 
     # Assume last column is target
     X = data.iloc[:, :-1]
@@ -35,6 +38,9 @@ if uploaded_file:
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
+
+    st.write(f"Training samples: {len(X_train)}")
+    st.write(f"Testing samples: {len(X_test)}")
 
     # Scale features
     scaler = StandardScaler()
@@ -70,6 +76,7 @@ if uploaded_file:
 
     # Metrics
     st.subheader("Evaluation Metrics")
+    st.write(f"Evaluation performed on {len(y_test)} test samples out of {len(data)} total rows.")
     st.write("Accuracy:", round(accuracy_score(y_test, y_pred), 4))
     st.write("Precision:", round(precision_score(y_test, y_pred, average='weighted'), 4))
     st.write("Recall:", round(recall_score(y_test, y_pred, average='weighted'), 4))
@@ -77,6 +84,8 @@ if uploaded_file:
     st.write("MCC:", round(matthews_corrcoef(y_test, y_pred), 4))
     if y_prob is not None and len(np.unique(y)) == 2:
         st.write("AUC:", round(roc_auc_score(y_test, y_prob), 4))
+    else:
+        st.write("AUC: N/A (binary classification required)")
 
     # Confusion Matrix
     st.subheader("Confusion Matrix")
