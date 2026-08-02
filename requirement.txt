@@ -1,0 +1,16 @@
+# Core libraries
+numpy
+pandas
+
+# Machine Learning
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# Jupyter Notebook (for running .ipynb in Virtual Lab)
+jupyter
+
+# Streamlit (for app.py deployment)
+streamlit
